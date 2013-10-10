@@ -39,7 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Event\Delegates.cs" />
+    <Compile Include="Jid.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="UserInfoCollection.cs" />
+    <Compile Include="XmppClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Packet\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
