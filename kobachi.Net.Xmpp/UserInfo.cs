@@ -12,7 +12,7 @@ namespace kobachi.Net.Xmpp {
 		/// <summary>
 		/// ユーザーのJIDを取得します。
 		/// </summary>
-		public readonly Jid Jid { get; private set; }
+		public Jid Jid { get; private set; }
 
 		/// <summary>
 		/// ユーザーが所属するグループを取得または設定します。
@@ -34,7 +34,7 @@ namespace kobachi.Net.Xmpp {
 		/// <param name="a"></param>
 		/// <param name="b"></param>
 		/// <returns></returns>
-		public bool operator ==(UserInfo a, UserInfo b){
+		public static bool operator ==(UserInfo a, UserInfo b){
 			return a != null && b != null && a.Equals(b);
 		}
 
@@ -44,7 +44,7 @@ namespace kobachi.Net.Xmpp {
 		/// <param name="a"></param>
 		/// <param name="b"></param>
 		/// <returns></returns>
-		public bool operator !=(UserInfo a, UserInfo b) {
+		public static bool operator !=(UserInfo a, UserInfo b) {
 			return !(a == b);
 		}
 

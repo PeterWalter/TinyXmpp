@@ -13,7 +13,7 @@ namespace kobachi.Net.Xmpp {
 		/// <summary>
 		/// JIDとして使用するメールアドレスを取得します。
 		/// </summary>
-		public readonly MailAddress MailAddress { get; private set; }
+		public MailAddress MailAddress { get; private set; }
 
 		/// <summary>
 		/// メールアドレスを指定してJIDを初期化します。
@@ -41,7 +41,7 @@ namespace kobachi.Net.Xmpp {
 		/// <param name="a"></param>
 		/// <param name="b"></param>
 		/// <returns></returns>
-		public bool operator ==(Jid a, Jid b) {
+		public static bool operator ==(Jid a, Jid b) {
 			return a != null && b != null && a.Equals(b);
 		}
 
@@ -51,7 +51,7 @@ namespace kobachi.Net.Xmpp {
 		/// <param name="a"></param>
 		/// <param name="b"></param>
 		/// <returns></returns>
-		public bool operator !=(Jid a, Jid b) {
+		public static bool operator !=(Jid a, Jid b) {
 			return !(a == b);
 		}
 
